@@ -1,0 +1,42 @@
+{
+  "ranked": [
+    {
+      "technique": "8bit_optimiser",
+      "memory_saved_gb": 0.4137859344482422,
+      "throughput_lost_samp_s": 3.6939877799250667,
+      "score_gb_per_samp_s_lost": 0.11201605395041017,
+      "note": "GB saved per (samp/s) lost"
+    },
+    {
+      "technique": "best_combination",
+      "memory_saved_gb": 0.6191587448120117,
+      "throughput_lost_samp_s": 104.76027011304538,
+      "score_gb_per_samp_s_lost": 0.005910243875315384,
+      "note": "GB saved per (samp/s) lost"
+    },
+    {
+      "technique": "gradient_checkpointing",
+      "memory_saved_gb": -0.41075563430786133,
+      "throughput_lost_samp_s": 58.8325236535602,
+      "score_gb_per_samp_s_lost": -0.006981778254603307,
+      "note": "GB saved per (samp/s) lost"
+    },
+    {
+      "technique": "gradient_accumulation",
+      "memory_saved_gb": -0.3917050361633301,
+      "throughput_lost_samp_s": 55.59259785244916,
+      "score_gb_per_samp_s_lost": -0.00704599265540661,
+      "note": "GB saved per (samp/s) lost"
+    },
+    {
+      "technique": "mixed_precision",
+      "memory_saved_gb": -0.41222190856933594,
+      "throughput_lost_samp_s": 28.855860018627254,
+      "score_gb_per_samp_s_lost": -0.014285552685078015,
+      "note": "GB saved per (samp/s) lost"
+    }
+  ],
+  "apply_first": "8bit_optimiser",
+  "skip_on_32gb": "gradient_checkpointing",
+  "rationale": "Apply first the technique with the best memory-saved / throughput-lost ratio (AMP often wins because it may save memory AND raise throughput). On a 32 GB card skip the weakest memory win that still costs speed \u2014 typically gradient checkpointing, whose whole point is trading compute for memory you already have."
+}

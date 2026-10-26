@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-10-26T21:07:39.744577+00:00",
+  "hostname": "ADS-R15-836-01",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "python": "3.12.15",
+  "torch": "2.11.0+cu128",
+  "torch_cuda": "12.8",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_uuid": "GPU-3094e1cd-3205-910b-9555-93d8401b1ce0",
+  "vram_bytes": 25756696576,
+  "driver_version": "610.60",
+  "power_limit_w": "450.00 W",
+  "nvidia_smi_basic": "name, uuid, driver_version, memory.total [MiB], power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]\nNVIDIA GeForce RTX 4090, GPU-3094e1cd-3205-910b-9555-93d8401b1ce0, 610.60, 24564 MiB, 450.00 W, 3105 MHz, 10501 MHz"
+}

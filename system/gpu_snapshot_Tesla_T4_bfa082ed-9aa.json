@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2026-10-26T22:16:23.663812+00:00",
+  "hostname": "60e5d1f2549a",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "python": "3.13.16",
+  "torch": "2.13.0+cu130",
+  "torch_cuda": "13.0",
+  "cuda_available": true,
+  "gpu_name": "Tesla T4",
+  "gpu_uuid": "GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333",
+  "vram_bytes": 15637086208,
+  "driver_version": "580.82.07",
+  "power_limit_w": "70.00 W",
+  "nvidia_smi_basic": "name, uuid, driver_version, memory.total [MiB], power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]\nTesla T4, GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333, 580.82.07, 15360 MiB, 70.00 W, 1590 MHz, 5001 MHz"
+}

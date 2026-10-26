@@ -1,0 +1,110 @@
+{
+  "run_name": "partB_amp",
+  "status": "SUCCESS",
+  "oom": false,
+  "config": {
+    "batch_size": 8,
+    "epochs": 2,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "use_amp": true,
+    "gradient_checkpointing": false,
+    "grad_accum_steps": 1,
+    "optimizer_name": "adamw",
+    "max_train_steps": null,
+    "run_name": "partB_amp",
+    "save": false,
+    "eval_test": true
+  },
+  "gpu_name": "Tesla T4",
+  "gpu_uuid": "GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333",
+  "vram_bytes": 15637086208,
+  "device": "cuda",
+  "n_train": 3499,
+  "n_val": 750,
+  "n_test": 751,
+  "slice_meta": {
+    "dataset": "cardiffnlp/tweet_eval/sentiment",
+    "full_train_rows": 45615,
+    "slice_start": 357,
+    "slice_end_exclusive": 5357,
+    "slice_end_inclusive": 5356,
+    "n_rows_requested": 5000,
+    "n_rows_used": 5000,
+    "label_names": {
+      "0": "negative",
+      "1": "neutral",
+      "2": "positive"
+    },
+    "note": "Used 5000 consecutive rows beginning at SLICE"
+  },
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8451635944533259,
+      "val_loss": 0.6831243050859329,
+      "val_accuracy": 0.7013333333333334,
+      "epoch_seconds": 41.46787635699957,
+      "samples_per_sec": 84.37856739701083,
+      "n_train_seen": 3499
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5269410078032898,
+      "val_loss": 0.7128734060741485,
+      "val_accuracy": 0.7053333333333334,
+      "epoch_seconds": 41.50559952000003,
+      "samples_per_sec": 84.30187831196028,
+      "n_train_seen": 3499
+    }
+  ],
+  "wall_clock_sec": 94.14911811499996,
+  "peak_memory_gb": 2.501265525817871,
+  "optimizer_steps": 876,
+  "optimizer_class": "AdamW",
+  "effective_batch": 8,
+  "stopped_improving_epoch": 2,
+  "best_val_loss": 0.6831243050859329,
+  "test_loss": 0.6950625132055993,
+  "test_accuracy": 0.7003994673768309,
+  "per_class": {
+    "negative": {
+      "precision": 0.6836734693877551,
+      "recall": 0.5726495726495726,
+      "f1": 0.6232558139534884,
+      "support": 117
+    },
+    "neutral": {
+      "precision": 0.6890756302521008,
+      "recall": 0.717201166180758,
+      "f1": 0.7028571428571428,
+      "support": 343
+    },
+    "positive": {
+      "precision": 0.7195945945945946,
+      "recall": 0.7319587628865979,
+      "f1": 0.7257240204429302,
+      "support": 291
+    }
+  },
+  "confusion_matrix": [
+    [
+      67,
+      38,
+      12
+    ],
+    [
+      26,
+      246,
+      71
+    ],
+    [
+      5,
+      73,
+      213
+    ]
+  ],
+  "checkpoint_dir": null,
+  "mean_epoch_sec": 41.4867379384998,
+  "mean_throughput_samp_s": 84.34022285448555
+}

@@ -1,0 +1,66 @@
+{
+  "run_name": "partA_bs256",
+  "status": "SUCCESS",
+  "oom": false,
+  "config": {
+    "batch_size": 256,
+    "epochs": 1,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "use_amp": false,
+    "gradient_checkpointing": false,
+    "grad_accum_steps": 1,
+    "optimizer_name": "adamw",
+    "max_train_steps": null,
+    "run_name": "partA_bs256",
+    "save": false,
+    "eval_test": false
+  },
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_uuid": "GPU-3094e1cd-3205-910b-9555-93d8401b1ce0",
+  "vram_bytes": 25756696576,
+  "device": "cuda",
+  "n_train": 3499,
+  "n_val": 750,
+  "n_test": 751,
+  "slice_meta": {
+    "dataset": "cardiffnlp/tweet_eval/sentiment",
+    "full_train_rows": 45615,
+    "slice_start": 357,
+    "slice_end_exclusive": 5357,
+    "slice_end_inclusive": 5356,
+    "n_rows_requested": 5000,
+    "n_rows_used": 5000,
+    "label_names": {
+      "0": "negative",
+      "1": "neutral",
+      "2": "positive"
+    },
+    "note": "Used 5000 consecutive rows beginning at SLICE"
+  },
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0271297093799163,
+      "val_loss": 0.9961581230163574,
+      "val_accuracy": 0.4573333333333333,
+      "epoch_seconds": 6.673328300006688,
+      "samples_per_sec": 524.3260697958608,
+      "n_train_seen": 3499
+    }
+  ],
+  "wall_clock_sec": 7.166075199987972,
+  "peak_memory_gb": 20.702828407287598,
+  "optimizer_steps": 14,
+  "optimizer_class": "AdamW",
+  "effective_batch": 256,
+  "stopped_improving_epoch": null,
+  "best_val_loss": 0.9961581230163574,
+  "test_loss": null,
+  "test_accuracy": null,
+  "per_class": null,
+  "confusion_matrix": null,
+  "checkpoint_dir": null,
+  "mean_epoch_sec": 6.673328300006688,
+  "mean_throughput_samp_s": 524.3260697958608
+}

@@ -1,0 +1,119 @@
+{
+  "run_name": "hw4a_baseline",
+  "status": "SUCCESS",
+  "oom": false,
+  "config": {
+    "batch_size": 8,
+    "epochs": 3,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "use_amp": false,
+    "gradient_checkpointing": false,
+    "grad_accum_steps": 1,
+    "optimizer_name": "adamw",
+    "max_train_steps": null,
+    "run_name": "hw4a_baseline",
+    "save": true,
+    "eval_test": true
+  },
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "gpu_uuid": "GPU-3094e1cd-3205-910b-9555-93d8401b1ce0",
+  "vram_bytes": 25756696576,
+  "device": "cuda",
+  "n_train": 3499,
+  "n_val": 750,
+  "n_test": 751,
+  "slice_meta": {
+    "dataset": "cardiffnlp/tweet_eval/sentiment",
+    "full_train_rows": 45615,
+    "slice_start": 357,
+    "slice_end_exclusive": 5357,
+    "slice_end_inclusive": 5356,
+    "n_rows_requested": 5000,
+    "n_rows_used": 5000,
+    "label_names": {
+      "0": "negative",
+      "1": "neutral",
+      "2": "positive"
+    },
+    "note": "Used 5000 consecutive rows beginning at SLICE"
+  },
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8497846972332508,
+      "val_loss": 0.7173532767498747,
+      "val_accuracy": 0.6973333333333334,
+      "epoch_seconds": 16.770782399980817,
+      "samples_per_sec": 208.6366584783786,
+      "n_train_seen": 3499
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5460478450595123,
+      "val_loss": 0.7326096137787433,
+      "val_accuracy": 0.7066666666666667,
+      "epoch_seconds": 16.216897100006463,
+      "samples_per_sec": 215.76260726218737,
+      "n_train_seen": 3499
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.31496303792905556,
+      "val_loss": 0.8583658743411937,
+      "val_accuracy": 0.7053333333333334,
+      "epoch_seconds": 16.205550699989544,
+      "samples_per_sec": 215.91367456597803,
+      "n_train_seen": 3499
+    }
+  ],
+  "wall_clock_sec": 51.39742669998668,
+  "peak_memory_gb": 2.087822914123535,
+  "optimizer_steps": 1314,
+  "optimizer_class": "AdamW",
+  "effective_batch": 8,
+  "stopped_improving_epoch": 2,
+  "best_val_loss": 0.7173532767498747,
+  "test_loss": 0.8499170438327054,
+  "test_accuracy": 0.6990679094540613,
+  "per_class": {
+    "negative": {
+      "precision": 0.6363636363636364,
+      "recall": 0.5384615384615384,
+      "f1": 0.5833333333333334,
+      "support": 117
+    },
+    "neutral": {
+      "precision": 0.679144385026738,
+      "recall": 0.7405247813411079,
+      "f1": 0.708507670850767,
+      "support": 343
+    },
+    "positive": {
+      "precision": 0.7482014388489209,
+      "recall": 0.7147766323024055,
+      "f1": 0.7311072056239016,
+      "support": 291
+    }
+  },
+  "confusion_matrix": [
+    [
+      63,
+      45,
+      9
+    ],
+    [
+      28,
+      254,
+      61
+    ],
+    [
+      8,
+      75,
+      208
+    ]
+  ],
+  "checkpoint_dir": "C:\\Users\\sarvesh\\Downloads\\gpu_assignment2_genai\\checkpoints\\bert_sentiment_hw4a",
+  "mean_epoch_sec": 16.397743399992276,
+  "mean_throughput_samp_s": 213.437646768848
+}

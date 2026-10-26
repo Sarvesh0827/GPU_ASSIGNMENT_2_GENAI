@@ -1,0 +1,2 @@
+name, uuid, driver_version, memory.total [MiB], power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]
+Tesla T4, GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333, 580.82.07, 15360 MiB, 70.00 W, 1590 MHz, 5001 MHz

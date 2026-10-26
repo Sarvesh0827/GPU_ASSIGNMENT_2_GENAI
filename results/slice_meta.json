@@ -1,0 +1,15 @@
+{
+  "dataset": "cardiffnlp/tweet_eval/sentiment",
+  "full_train_rows": 45615,
+  "slice_start": 357,
+  "slice_end_exclusive": 5357,
+  "slice_end_inclusive": 5356,
+  "n_rows_requested": 5000,
+  "n_rows_used": 5000,
+  "label_names": {
+    "0": "negative",
+    "1": "neutral",
+    "2": "positive"
+  },
+  "note": "Used 5000 consecutive rows beginning at SLICE"
+}

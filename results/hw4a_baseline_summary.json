@@ -1,0 +1,54 @@
+{
+  "peak_memory_gb": 2.087822914123535,
+  "wall_clock_sec": 51.39742669998668,
+  "test_accuracy": 0.6990679094540613,
+  "stopped_improving_epoch": 2,
+  "epoch_log": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8497846972332508,
+      "val_loss": 0.7173532767498747,
+      "val_accuracy": 0.6973333333333334,
+      "epoch_seconds": 16.770782399980817,
+      "samples_per_sec": 208.6366584783786,
+      "n_train_seen": 3499
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5460478450595123,
+      "val_loss": 0.7326096137787433,
+      "val_accuracy": 0.7066666666666667,
+      "epoch_seconds": 16.216897100006463,
+      "samples_per_sec": 215.76260726218737,
+      "n_train_seen": 3499
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.31496303792905556,
+      "val_loss": 0.8583658743411937,
+      "val_accuracy": 0.7053333333333334,
+      "epoch_seconds": 16.205550699989544,
+      "samples_per_sec": 215.91367456597803,
+      "n_train_seen": 3499
+    }
+  ],
+  "gpu_uuid": "GPU-3094e1cd-3205-910b-9555-93d8401b1ce0",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "batch_size": 8,
+  "checkpoint_dir": "C:\\Users\\sarvesh\\Downloads\\gpu_assignment2_genai\\checkpoints\\bert_sentiment_hw4a",
+  "slice_meta": {
+    "dataset": "cardiffnlp/tweet_eval/sentiment",
+    "full_train_rows": 45615,
+    "slice_start": 357,
+    "slice_end_exclusive": 5357,
+    "slice_end_inclusive": 5356,
+    "n_rows_requested": 5000,
+    "n_rows_used": 5000,
+    "label_names": {
+      "0": "negative",
+      "1": "neutral",
+      "2": "positive"
+    },
+    "note": "Used 5000 consecutive rows beginning at SLICE"
+  }
+}

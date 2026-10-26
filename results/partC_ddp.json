@@ -1,0 +1,23 @@
+{
+  "rank": 0,
+  "world_size": 1,
+  "homogeneous": true,
+  "topology": "single-node",
+  "n_visible_cuda_devices": 1,
+  "batch_size_per_rank": 8,
+  "global_batch": 8,
+  "epochs": 1,
+  "local_samples": 3496,
+  "local_throughput_samp_s": 237.5492156142585,
+  "wall_sec": 14.7169503000041,
+  "gpu_uuid": "GPU-3094e1cd-3205-910b-9555-93d8401b1ce0",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "communication": {
+    "world_size": 1,
+    "interconnect": "none (single process)",
+    "effective_bandwidth_GBps": null,
+    "allreduce_ms": null,
+    "note": "No peer to communicate with; DDP all-reduce was not exercised."
+  },
+    "pairing_note": "This workstation has one NVIDIA GeForce RTX 4090 (UUID GPU-3094e1cd-3205-910b-9555-93d8401b1ce0). No second CUDA device is visible, so DDP all-reduce was not exercised. The second-card UUID capture for Parts A/D is a Colab/Kaggle run."
+}

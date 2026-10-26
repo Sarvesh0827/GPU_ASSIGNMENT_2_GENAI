@@ -1,0 +1,21 @@
+.venv/
+venv/
+python-*.exe
+python-install.log
+python-install*.log
+colab_card2_outputs.zip
+colab_card2_extracted/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Large model weights — keep the training command in METRICS.md
+checkpoints/**
+!checkpoints/.gitkeep
+!checkpoints/README.md
+
+# Local secrets / HF tokens
+.env
+hf_token.txt

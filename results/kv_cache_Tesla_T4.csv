@@ -1,0 +1,9 @@
+engine,model_id,batch_size,context_length,gpu_uuid,gpu_name,status,peak_memory_gb
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,64,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,128,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,256,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,512,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,1024,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,2048,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,4096,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125
+vllm,Qwen/Qwen2.5-0.5B-Instruct,8,8192,GPU-bfa082ed-9aa0-5fcd-0f6b-582b67447333,Tesla T4,SUCCESS,0.0079345703125

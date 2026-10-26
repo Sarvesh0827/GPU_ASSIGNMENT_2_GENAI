@@ -1,0 +1,47 @@
+[
+  {
+    "text": "I love this class, the GPU labs actually make the architecture click.",
+    "pred_label": "positive",
+    "probs": {
+      "negative": 0.0066,
+      "neutral": 0.0085,
+      "positive": 0.9848
+    }
+  },
+  {
+    "text": "This assignment is due tonight and the cluster is down. worst day ever.",
+    "pred_label": "negative",
+    "probs": {
+      "negative": 0.9531,
+      "neutral": 0.024,
+      "positive": 0.0229
+    }
+  },
+  {
+    "text": "The shuttle to campus is at 7:15 as usual.",
+    "pred_label": "neutral",
+    "probs": {
+      "negative": 0.0084,
+      "neutral": 0.9573,
+      "positive": 0.0342
+    }
+  },
+  {
+    "text": "Can't wait for the 4090 slot \u2014 hope mixed precision lets me raise the batch.",
+    "pred_label": "positive",
+    "probs": {
+      "negative": 0.0048,
+      "neutral": 0.0092,
+      "positive": 0.986
+    }
+  },
+  {
+    "text": "nobody understands how vLLM paging works and I have a quiz in the morning",
+    "pred_label": "neutral",
+    "probs": {
+      "negative": 0.04,
+      "neutral": 0.9305,
+      "positive": 0.0295
+    }
+  }
+]
